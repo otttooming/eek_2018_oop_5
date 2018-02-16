@@ -42,6 +42,20 @@ namespace eek_2018_oop_5
                 x.printMe();
             }
 
+            // Date formatting
+
+            Console.WriteLine();
+            DateEst valentineDayEe = new DateEst("14.02.2018");
+            valentineDayEe.printMe();
+            DateUS valentineDayUS = valentineDayEe;
+            valentineDayUS.printMe();
+
+            Console.WriteLine();
+            DateUS midsummersEveUS = new DateEst("24.06.2018");
+            midsummersEveUS.printMe();
+            DateEst midsummersEveEE = midsummersEveUS;
+            midsummersEveEE.printMe();
+
             Console.Read();
         }
     }

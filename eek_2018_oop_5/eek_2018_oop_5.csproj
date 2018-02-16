@@ -36,6 +36,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="Calculate.cs" />
+    <Compile Include="DateEst.cs" />
+    <Compile Include="DateUS.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
