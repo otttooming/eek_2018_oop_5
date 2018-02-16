@@ -30,5 +30,8 @@ namespace eek_2018_oop_5
         {
             return population / area;
         }
+
+        public static bool operator > (Country a, Country b) { return a.population > b.population; }
+        public static bool operator < (Country a, Country b) { return a.population < b.population; }
     }
 }
