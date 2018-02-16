@@ -7,6 +7,10 @@ namespace eek_2018_oop_5
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            // Comparisons
+
+
         }
     }
 }
