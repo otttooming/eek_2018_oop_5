@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+
 namespace eek_2018_oop_5
 {
-    class Country : Calculate
+    class Country : Calculate, IComparable<Country>
     {
         protected string name;
         protected double population;
@@ -23,7 +26,7 @@ namespace eek_2018_oop_5
 
         public void printMe()
         {
-            Console.WriteLine("{0,-15} {1,6:f1} {2:6:f1}", name, population, area);
+            Console.WriteLine("{0,-15} {1,6:f1} {2,6:f1}", name, population, area);
         }
 
         public double calculatePopulationDensity()
@@ -33,5 +36,16 @@ namespace eek_2018_oop_5
 
         public static bool operator > (Country a, Country b) { return a.population > b.population; }
         public static bool operator < (Country a, Country b) { return a.population < b.population; }
+        // public static bool operator == (Country a, Country b) { return a.population == b.population; }
+
+        public int CompareTo(Country x)
+        {
+            if (this < x)
+                return 1;
+            else if (this == x)
+                return 0;
+            else
+                return -1;
+        }
     }
 }
